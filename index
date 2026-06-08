@@ -49,9 +49,9 @@
   /* PROFILE */
   .profile-card{position:relative;animation:fadeInRight 0.8s 0.3s ease both;}
   .profile-hexagon{width:280px;height:280px;margin:0 auto 1.5rem;position:relative;}
-  .profile-frame{width:100%;height:100%;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;position:relative;}
-  .profile-inner{width:calc(100% - 6px);height:calc(100% - 6px);clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);background:var(--surface);display:flex;align-items:center;justify-content:center;overflow:hidden;position:absolute;top:3px;left:3px;}
-  .profile-img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+  .profile-frame{width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;position:relative;}
+  .profile-inner{width:calc(100% - 6px);height:calc(100% - 6px);border-radius:50%;background:var(--surface);display:flex;align-items:center;justify-content:center;overflow:hidden;position:absolute;top:3px;left:3px;}
+  .profile-img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;}
   .profile-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);font-size:0.7rem;text-align:center;padding:2rem;gap:0.5rem;}
   .profile-fallback svg{width:50px;height:50px;opacity:0.3;}
   .profile-orbit{position:absolute;inset:-20px;border:1px dashed rgba(0,212,255,0.2);border-radius:50%;animation:spin 20s linear infinite;}
@@ -262,7 +262,7 @@
               └─────────────────────────────────────────────┘
             -->
             <img class="profile-img"
-                 src="YOUR_PHOTO_URL_HERE"
+                 src="https://media.licdn.com/dms/image/v2/D5603AQFxwD4mr9Hnbw/profile-displayphoto-scale_400_400/B56ZsvqQfUI0Ak-/0/1766031166006?e=1782345600&v=beta&t=k_M4tJFDAaET8kBL8fikZjT9OMconWor7v38JAkBt0M"
                  alt="Sugnana Murthy GM"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
             <div class="profile-fallback" style="display:none;">
